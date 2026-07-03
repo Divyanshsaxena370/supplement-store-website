@@ -62,37 +62,6 @@ width:200px;
     position:relative;
 }
 
-.search-popup{
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:8px;
-    display:none;
-    z-index:1000;
-    max-height:300px;
-    overflow-y:auto;
-}
-
-.search-item{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    padding:10px;
-    cursor:pointer;
-}
-
-.search-item:hover{
-    background:#f2f2f2;
-}
-
-.search-item img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
-}
 .icon{
     display:flex;
     gap:20px;
