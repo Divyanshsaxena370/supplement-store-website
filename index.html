@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplement store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    
+    <header>
+        
+        <div class="navbar">
+        <div class="nav-logo">
+            <div class="logo"></div>
+            </div>
+        
+        
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search products">
+
+             <button id="Searchpopup">search</button>
+             <div id="search-popup" class="search-popup"></div>
+            </div>
+    <div class="icon">
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+        <a href="login.html">
+        <i class="fa-solid fa-user"></i></a>
+         <i class="fa-regular fa-heart"></i>
+         <i class="fa-solid fa-cart-shopping"></i>
+        
+    </div>
+    
+                </div>    
+                
+                
+                
+                <div class="menubar">
+                     
+                    <div class="bar">Brands</div>
+                   <div class="bar">Sports Nutrition</div>
+                   <div class="bar">Vitamins&Supplement</div>
+                   <div class="bar">Healthy snacking</div>
+                   <div class="bar">Accessories</div>
+                </div>
+            
+                
+
+    </header>
+    <div class="hero">
+        <img src="banner1.jpg" class="slide active">
+        <img src="banner2.jpg" class="slide">
+        <img src="banner3.jpg" class="slide">
+        <img src="banner4.jpg" class="slide">
+    </div>
+    <section class="bestsellers">
+        <h2>Season Bestsellers!!</h2>
+        <div class="category">
+            <button>Proteins</button>
+            <button>Gainers</button>
+            <button>Creatines</button>
+            <button>Preworkout</button>
+            <button>Multivitamins</button>
+        </div>
+    </section>
+    <div class="products">
+    <div class="product-cart" data-name="Myprotein Impact whey Protein">
+
+    <img src="my protein whey.png" alt="Protein">
+    <p class="rating"><i class="fa-solid fa-star"></i> 4.8 (55)</p>
+    <h3>MyProtein Impact Whey Protein</h3>
+    <p class="weight">Chocolate Smooth | 1kg</p>
+    <h2>Rs.3495</h2>
+    <span class="discount">30% OFF</span>
+   <button onclick="showProduct('MyProtein Impact whey','3495','my protein whey.png',
+    'MyProtein Impact Whey Protein is made with high quality whey concentrate to support lean muscle growth, faster recovery, and daily protein intake. It mixes easily, tastes great, and is ideal for beginners as well as experienced athletes.' )">
+        Choose option
+    </button>
+
+</div>
+<div class="product-cart">
+
+    <img src="ripped whey.png" alt="Protein2">
+    <p class="rating"><i class="fa-solid fa-star"></i> 4.7 (47)</p>
+    <h3>Ripped Whey protein</h3>
+    <p class="weight"> Creamy Chocolate| 1kg</p>
+    <h2>Rs.3600</h2>
+    <span class="discount">25% OFF</span>
+    <button onclick="showProduct('Ripped whey protein','3600','ripped whey.png','Ripped Whey Protein is designed to support lean muscle building while helping maintain a fit physique. It delivers high quality protein with great taste and mixes smoothly for post workout recovery.')">
+      Choose option 
+       </button>
+    </div>
+
+    <div class="product-cart">
+        <img src="muscletech whey.png" alt="protein3">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.9 (58)</p>
+        <h3>Muscletech Nitro</h3>
+        <p class="weight"> Milk chocolate|1.82kg</p>
+        <h2>Rs.6200</h2>
+        <span class="discount">35% OFF</span>
+        <button onclick="showProduct('Muscletech Nitro','6200','muscletech whey.png','MuscleTech Whey Protein provides premium quality whey protein with essential amino acids to support muscle growth, strength, and faster recovery after intense workouts. It is trusted by fitness enthusiasts worldwide.')">
+        Choose option
+       </button>
+    </div>
+<div class="product-cart">
+    <img src="qnt whey.png" alt="protein4">
+    <p class="rating"><i class="fa-solid fa-star"></i> 4.5 (98)</p>
+    <h3>Qnt Whey protein</h3>
+    <p class="weight"> Kesar kaju pista|1kg</p>
+    <h2>Rs.2600</h2>
+    <span class="discount">30% OFF</span>
+    <button onclick="showProduct('QNT Whey protein','3600','qnt whey.png','QNT Whey Protein is a high quality protein supplement that helps build lean muscle, improve recovery, and support daily nutrition. It is easy to digest and perfect for regular gym training.')">
+         Choose option
+        </button>
+</div>
+
+<div class="product-cart">
+    <img src="Muscleblaze whey.png" alt="protein4">
+    <p class="rating"><i class="fa-solid fa-star"></i> 4.8 (77)</p>
+    <h3>Muscleblaze Whey protein</h3>
+    <p class="weight">Vanilla flavour |2kg</p>
+    <h2>Rs.6000</h2>
+    <span class="discount">35% OFF</span>
+    <button onclick="showProduct('Muscleblaze whey protein','6000','Muscleblaze whey.png','QNT Whey Protein is a high quality protein supplement that helps build lean muscle, improve recovery, and support daily nutrition. It is easy to digest and perfect for regular gym training.')">
+         Choose option   
+         </button>
+</div>
+</a>
+
+</div>
+
+<div class="hero1">
+    <img src="gainer banner.png" alt="gainer banner">
+</div>
+<section class="Gainer">
+        <h2>GAINER SECTION!!</h2>
+        </section>
+
+        <div class="products2">
+    <div class="product-cart">
+
+    <img src="gainer/GNC gainer.png" alt="Protein">
+    <p class="rating"><i class="fa-solid fa-star"></i> 4.5 (55)</p>
+    <h3>GNC weight gainer</h3>
+    <p class="weight">Vanilla ice cream | 3kg</p>
+    <h2>Rs.4000</h2>
+    <span class="discount">20% OFF</span>
+    <button onclick="showProduct('GNC weight gainer','4000','gainer/GNC gainer.png','GNC Weight Gainer is designed for individuals looking to increase their daily calorie and protein intake to support muscle growth and healthy weight gain. Its balanced blend of high-quality protein and carbohydrates helps fuel workouts, improve recovery, and provide sustained energy throughout the day.')">
+     Choose option</button>
+
+</div>
+
+    <div class="product-cart">
+
+    <img src="gainer/Atom gainer.png" alt="Protein">
+    <p class="rating"><i class="fa-solid fa-star"></i> 4.2 (44)</p>
+    <h3>Atom mass gainer</h3>
+    <p class="weight">Chocolate Smooth | 2kg</p>
+    <h2>Rs.2000</h2>
+    <span class="discount">20% OFF</span>
+    <button onclick="showProduct('Atom mass gainer','4000','gainer/Atom gainer.png','Atom Mass Gainer is a high-calorie nutritional supplement formulated to support healthy weight gain and muscle development. It provides a balanced combination of protein and carbohydrates to help meet increased calorie requirements while supporting post-workout recovery and daily energy needs.')">
+        Choose option</button>
+
+</div>
+<div class="product-cart">
+
+    <img src="gainer/Avvatar-gainer.png" alt="Protein">
+    <p class="rating"><i class="fa-solid fa-star"></i> 4.8 (67)</p>
+    <h3>Avvtar mass gainer</h3>
+    <p class="weight">Chocolate Smooth | 2kg</p>
+    <h2>Rs.2600</h2>
+    <span class="discount">20% OFF</span>
+    <button onclick="showProduct('Avvtar mass gainer','2600','gainer/Avvatar-gainer.png','Avvatar Mass Gainer is a calorie-rich nutritional formula designed to support healthy weight gain and muscle development. It combines quality protein with carbohydrates to help increase daily calorie intake, support muscle recovery, and provide sustained energy for intense workouts.')">
+      Choose option</button>
+
+</div>
+<div class="product-cart">
+
+    <img src="gainer/Nutrabey-gainer.png" alt="Protein">
+    <p class="rating"><i class="fa-solid fa-star"></i> 5.0 (64)</p>
+    <h3>Nutrabey mass gainer</h3>
+    <p class="weight">Vanilla cream flavor | 2kg</p>
+    <h2>Rs.3145</h2>
+    <span class="discount">20% OFF</span>
+    <button onclick="showProduct('Nutrabey mass gainer','3145','gainer/Nutrabey-gainer.png','Nutrabay Mass Gainer is a calorie-dense nutritional supplement designed to support healthy weight gain and muscle growth. It combines quality protein with complex carbohydrates to help increase daily calorie intake, promote muscle recovery, and provide sustained energy for training sessions.')">
+         Choose option</button>
+</div>
+<div class="product-cart">
+
+    <img src="gainer/On-gainer.png" alt="Protein">
+    <p class="rating"><i class="fa-solid fa-star"></i> 4.0 (74)</p>
+    <h3>Optimum  mass gainer</h3>
+    <p class="weight">Chocolate Smooth | 2kg</p>
+    <h2>Rs.4599</h2>
+    <span class="discount">20% OFF</span>
+   <button onclick="showProduct('Optimum mass gainer','4599','gainer/On-gainer.png','ON Serious Mass Gainer is a high-calorie nutrition formula designed to help support healthy weight gain and muscle development. It provides a blend of protein and carbohydrates to increase daily calorie intake, aid muscle recovery, and fuel intense training sessions.')">
+    Choose option</button>
+</div>
+</div>
+<div class="hero2">
+    <img src="creatine banner.png" alt="creatine">
+</div>
+<section class="Creatine">
+    <h2>CREATINE SECTION!!</h2>
+    </section>
+<div class="products">
+    <div class="product-cart">
+        <img src="creatine/Beast life creatine.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.0 (74)</p>
+        <h3>Beast life creatine</h3>
+        <p class="weight">Litchi flavour| 319g</p>
+        <h2>Rs.899</h2>
+        <span class="discount">25% OFF</span>
+        <button onclick="showProduct('Beast life creatine','899','creatine/Beast life creatine.png','Beast Life Creatine Monohydrate is a premium-quality supplement designed to support strength, power, and muscle performance. It helps improve workout intensity, enhances recovery, and supports lean muscle growth when combined with regular training and a balanced diet.')">
+           Choose option</button>
+
+    </div>
+    <div class="product-cart">
+        <img src="creatine/on creatine.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.3 (54)</p>
+        <h3>Optimum creatine</h3>
+        <p class="weight">unflavoured| 250g</p>
+        <h2>Rs.790</h2>
+        <span class="discount">25% OFF</span>
+        <button onclick="showProduct('Optimum creatine','790','creatine/on creatine.png','Optimum Nutrition (ON) Micronized Creatine Monohydrate is a high-quality creatine supplement that helps improve strength, power, and athletic performance during high-intensity workouts. Its micronized formula mixes easily and supports muscle recovery and lean muscle growth when used consistently with training and a balanced diet.')">
+         Choose option</button>
+
+    </div>
+    <div class="product-cart">
+        <img src="creatine/wellcore creatine.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.5 (94)</p>
+        <h3>Wellcore creatine</h3>
+        <p class="weight">Tropical tango| 122g</p>
+        <h2>Rs.800</h2>
+        <span class="discount">25% OFF</span>
+        <button onclick="showProduct('Wellcore creatine','800','creatine/wellcore creatine.png','Wellcore Creatine Monohydrate is a premium-quality creatine supplement formulated to support strength, power, and overall workout performance. It mixes easily, helps improve recovery after intense training, and supports lean muscle development when combined with regular exercise and a balanced diet.')">
+        Choose option</button>
+
+    </div>
+    <div class="product-cart">
+        <img src="creatine/Black beast.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.0 (44)</p>
+        <h3>Black beast creatine</h3>
+        <p class="weight">unflavoured| 122g</p>
+        <h2>Rs.599</h2>
+        <span class="discount">25% OFF</span>
+        <button onclick="showProduct('Black beast creatine','599','creatine/Black beast.png','Black Beast Creatine Monohydrate is a high-quality creatine supplement designed to support strength, power, and athletic performance. It helps increase workout intensity, supports faster muscle recovery, and promotes lean muscle growth when paired with consistent training and a balanced diet.')">
+            Choose option</button>
+
+    </div>
+    <div class="product-cart">
+        <img src="creatine/nutrabay creatine.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 3.9 (54)</p>
+        <h3>Nutrabey creatine</h3>
+        <p class="weight">Orange| 122g</p>
+        <h2>Rs.599</h2>
+        <span class="discount">25% OFF</span>
+        <button onclick="showProduct('Nutrabey creatine','craetine/nutrabey creatine.png','Nutrabay Creatine Monohydrate is a high-quality creatine supplement formulated to support strength, power, and overall exercise performance. It mixes easily, helps improve performance during high-intensity training, and supports muscle recovery and lean muscle development when combined with regular workouts and a balanced diet.')">
+            Choose option</button>
+
+    </div>
+
+</div>
+<section class="festive-offers">
+    <h3>FESTIVE OFFERS DEALS</h3>
+</section>
+<div class="banners">
+    <div class="banner">
+        <img src="short banner/banner1.png" alt="banner">
+        <img src="short banner/banner2.png" alt="banner">
+        <img src="short banner/banner3.png" alt="banner">
+        <img src="short banner/banner4.png" alt="banner">
+        <img src="short banner/banner5.png" alt="banner">
+    </div>
+
+
+</div>
+<section class="festive-offers">
+    <h3>Pre-workout Section !!</h3>
+    </section>
+<div class="products">
+    <div class="product-cart">
+        <img src="pre workout/big muscle.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 5.0 (94)</p>
+        <h3>Big Muscle pre workout</h3>
+        <p class="weight">Strawberry| 300g</p>
+        <h2>Rs.1100</h2>
+        <span class="discount">40% OFF</span>
+        <button onclick="showProduct('Big Muscle pre workout','1100','pre workout/big muscle.png','BigMuscles Pre-Workout is an advanced pre-workout formula designed to boost energy, focus, and workout performance. It helps improve endurance, supports better training intensity, and prepares your body for challenging workouts when used as directed.')">
+             Choose option</button>
+
+    </div>
+    <div class="product-cart">
+        <img src="pre workout/blackbeast.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.5 (54)</p>
+        <h3>Blackbeast pre workout</h3>
+        <p class="weight">Coca cola| 300g</p>
+        <h2>Rs.800</h2>
+        <span class="discount">40% OFF</span>
+        <button onclick="showProduct('Blackbeast pre workout','800','pre workout/blackbeast','Black Beast Pre-Workout is a high-performance pre-workout formula designed to boost energy, focus, and endurance before training. It helps improve workout intensity, supports better performance during exercise, and prepares you for challenging workout sessions.')">
+             Choose option</button>
+        </div>
+    <div class="product-cart">
+        <img src="pre workout/volcano.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.6 (48)</p>
+        <h3>Volcano pre workout</h3>
+        <p class="weight">Mojito| 300G</p>
+        <h2>Rs.700</h2>
+        <span class="discount">40% OFF</span>
+        <button onclick="showProduct('Volcano pre workout','700','preworkout/volcano.png','Volcano Pre-Workout is a powerful pre-workout formula designed to support energy, focus, and endurance before exercise. It helps improve workout performance, enhances training intensity, and prepares your body for high-intensity workout sessions when used as directed.')">
+            Choose option</button>
+</div>
+    <div class="product-cart">
+        <img src="pre workout/doctor choice.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.7 (74)</p>
+        <h3>Doctor choice pre workout</h3>
+        <p class="weight">Orange| 350g</p>
+        <h2>Rs.999</h2>
+        <span class="discount">40% OFF</span>
+        <button onclick="showProduct('Doctor choice pre workout','999','pre workout/doctor choice.png','Doctor Choice Pre Workout is a high performance pre workout supplement that helps increase energy, focus, strength, endurance, and muscle pump. Its advanced formula supports intense training, reduces fatigue, and helps you achieve better workout performance. Suitable for athletes and fitness enthusiasts looking to maximize every workout.')">
+            Choose option</button>
+            
+        </div>
+   <div class="product-cart">
+        <img src="pre workout/well core.png" alt="creatine">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.7 (74)</p>
+        <h3>Wellversed pre workout</h3>
+        <p class="weight">Green apple| 300g</p>
+        <h2>Rs.1200</h2>
+        <span class="discount">40% OFF</span>
+        <button onclick="showProduct('Wellversed pre workout','1200','pre workout/well core.png','Power up your workout with Wellcore Well Versed Pre-Workout. It helps boost energy, improve focus, and increase endurance, so you can train harder and perform better. Its fast-absorbing formula supports strength and reduces tiredness during intense workouts. Perfect for gym sessions, weight training, and high-intensity exercises.')">
+           Choose option</button>
+        </div>
+    
+
+    </div>
+    <div class="hero3">
+        <img src="banner multivitamin.jpeg" alt="multivitamin">
+    </div>
+    <section class="Multivitamins">
+    <h3>MUTIVITAMIN SECTION!!</h3>
+    </section>
+
+    <div class="products">
+        <div class="product-cart">
+        <img src="multivitamin/gnc.png" alt="vitamin">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.6 (74)</p>
+        <h3>GNC Multivitamins</h3>
+        <p class="weight">unflavoured| 60 tab </p>
+        <h2>Rs.399</h2>
+        <span class="discount">15% OFF</span>
+        <button onclick="showProduct('GNC Multivitamin','399','multivitamin/gnc.png','Support your daily health with GNC Multivitamin. It provides essential vitamins and minerals to help maintain energy, immunity, and overall wellness. This daily formula also supports bone health, muscle function, and metabolism, making it a great addition to a healthy lifestyle. Suitable for everyday use alongside a balanced diet.')">
+             Choose option</button>
+        </div>
+
+    
+    <div class="product-cart">
+        <img src="multivitamin/hk vital.png" alt="vitamin">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.8 (54)</p>
+        <h3>HK Multivitamin</h3>
+        <p class="weight">unflavoured| 60 tab </p>
+        <h2>Rs.300</h2>
+        <span class="discount">15% OFF</span>
+        <button onclick="showProduct('HK multivitamin','300','multivitamin/hk vital.png','Support your daily nutrition with HK Multivitamin. It provides a blend of essential vitamins and minerals to help boost energy, support immunity, and promote overall health. This daily supplement also helps maintain healthy bones, muscles, and metabolism, making it ideal for an active lifestyle. Suitable for regular use with a balanced diet.')">
+             Choose option</button>
+        </div>
+
+        <div class="product-cart">
+        <img src="multivitamin/muscleblaze.png" alt="vitamin">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.0 (55)</p>
+        <h3>Muscleblaze Multivitamins</h3>
+        <p class="weight">unflavoured| 60 tab </p>
+        <h2>Rs.400</h2>
+        <span class="discount">15% OFF</span>
+        <button onclick="showProduct('Muscleblaze Multivitamin','400','multivitamin/muscleblaze.png','Support your daily health with MuscleBlaze Multivitamin. It is packed with essential vitamins and minerals to help boost energy, strengthen immunity, and support overall wellness. The formula also helps maintain healthy bones, muscles, and metabolism, making it a great choice for active individuals and fitness enthusiasts. Suitable for daily use with a balanced diet.')">
+             Choose option</button>
+        </div>
+
+        <div class="product-cart">
+        <img src="multivitamin/nutrabey.png" alt="vitamin">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.0 (44)</p>
+        <h3>Nutrabey Multivitamins</h3>
+        <p class="weight">unflavoured| 60 tab </p>
+        <h2>Rs.349</h2>
+        <span class="discount">15% OFF</span>
+        <button onclick="showProduct('Nutrabey Multivitamin','349','multivitamin/nutrabey.png','Support your daily health with Nutrabey Multivitamin. It is packed with essential vitamins and minerals to help boost energy, strengthen immunity, and support overall wellness. The formula also helps maintain healthy bones, muscles, and metabolism, making it a great choice for active individuals and fitness enthusiasts. Suitable for daily use with a balanced diet.')">
+              Choose option</button>
+         </div>
+
+        <div class="product-cart">
+        <img src="multivitamin/optimum.png" alt="vitamin">
+        <p class="rating"><i class="fa-solid fa-star"></i> 4.7 (94)</p>
+        <h3>Optimum Multivitamins</h3>
+        <p class="weight">unflavoured| 60 tab </p>
+        <h2>Rs.400</h2>
+        <span class="discount">15% OFF</span>
+        <button onclick="showProduct('Optimum Multivitamin','400','multivitamin/optimum.png','Support your daily wellness with optimium Multivitamin. It contains essential vitamins and minerals that help boost energy, support immunity, and promote overall health. This daily formula also supports healthy bones, muscles, and metabolism while helping fill nutritional gaps. Ideal for maintaining an active and healthy lifestyle.')">
+
+           Choose option</button>
+        </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+        <h3>Nutrihub store</h3>
+        <p>Your trusted supplement partner.</p>
+        <p>Email: support@Nutrihub.com</p>
+        <p>Phone: +91 904470962</p>
+        <p> 2026 Nurihub. All Rights Reserved.</p>
+    </div>
+
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
