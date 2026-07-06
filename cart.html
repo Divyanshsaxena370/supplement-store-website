@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD TO CART</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cart.css">
+
+<div class="cart-overlay"></div>
+
+<div class="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>Your Cart (<span id="cartCount">0</span>)</h2>
+        <button id="closeCart">&times;</button>
+    </div>
+
+    <div id="cartItems">
+        <!-- JS yaha products add karegi -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="total-box">
+            <h3>Estimated Total</h3>
+            <h2> <i class="fa-solid fa-indian-rupee-sign"></i><span id="totalPrice">0</span></h2>
+        </div>
+
+        <button class="checkout-btn">
+            Proceed To Checkout
+        </button>
+    </div>
+
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>

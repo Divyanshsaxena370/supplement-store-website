@@ -103,3 +103,31 @@ searchInput.addEventListener("input", function () {
     }, 1000); // 1 second baad scroll hoga
 
 });
+//cart.html
+// Cart Elements
+
+const cartBtn = document.getElementById("cartBtn");
+const cartSidebar = document.querySelector(".cart-sidebar");
+const closeCart = document.getElementById("closeCart");
+const overlay = document.querySelector(".cart-overlay");
+
+// Open Cart
+
+cartBtn.addEventListener("click", () => {
+    cartSidebar.classList.add("active");
+    overlay.style.display = "block";
+});
+
+// Close Cart
+
+closeCart.addEventListener("click", () => {
+    cartSidebar.classList.remove("active");
+    overlay.style.display = "none";
+});
+
+// Close on Overlay Click
+
+overlay.addEventListener("click", () => {
+    cartSidebar.classList.remove("active");
+    overlay.style.display = "none";
+});
