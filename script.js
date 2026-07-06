@@ -103,9 +103,3 @@ searchInput.addEventListener("input", function () {
     }, 1000); // 1 second baad scroll hoga
 
 });
-const menuToggle = document.querySelector(".menu-toggle");
-const menu = document.getElementById("menu");
-
-menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("show");
-});
