@@ -8,7 +8,7 @@
     
 
     <link rel="stylesheet" href="style.css">
-
+ <link rel="stylesheet" href="cart.css">
 </head>
 <body>
    <div class="product-page">
@@ -38,6 +38,33 @@
    </div>
    <p id="product-description"></p>
     </div>
+    <div class="cart-overlay"></div>
+
+<div class="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>Your Cart (<span id="cartCount">0</span>)</h2>
+        <button id="closeCart">&times;</button>
+    </div>
+
+    <div id="cartItems">
+        <!-- JS yaha products add karegi -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="total-box">
+            <h3>Estimated Total</h3>
+            <h2> <i class="fa-solid fa-indian-rupee-sign"></i><span id="totalPrice">0</span></h2>
+        </div>
+
+        <button class="checkout-btn">
+            Proceed To Checkout
+        </button>
+    </div>
+
+</div>
+
     <script src="script.js"></script>
     
     </body>
+    </html>

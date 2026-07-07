@@ -12,11 +12,14 @@
     display: none;
     z-index: 999;
 }
+.cart-overlay.active{
+    display: block;
+}
 
 .cart-sidebar{
     position: fixed;
     top: 0;
-    right: 0;
+    right: -420px;
     width: 420px;
     height: 100vh;
     background: #fff;
@@ -184,11 +187,134 @@
     border-radius: 10px;
 }
 
-@media(max-width:500px){
-
-.cart-sidebar{
-    width:100%;
-    right:-100%;
+.icon a{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color:white;
 }
 
+#cartOpen{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
 }
+/* //checkout page css// */
+/* Checkout Page */
+
+.checkout-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.checkout-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.checkout-container label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+}
+
+.checkout-container input,
+.checkout-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.checkout-container textarea {
+    resize: none;
+}
+
+.checkout-container input:focus,
+.checkout-container textarea:focus {
+    border-color: #28a745;
+}
+
+
+/* Payment */
+
+.payment {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.payment label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.payment input {
+    width: auto;
+}
+
+
+/* Button */
+
+.place-order-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    background: #28a745;
+    color: white;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.place-order-btn:hover {
+    background: #218838;
+}
+
+/* Order Summary */
+
+.order-summary{
+    background: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.order-summary h3{
+    margin-bottom: 15px;
+}
+
+.summary-item,
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.total{
+    font-weight: bold;
+    font-size: 18px;
+}
+

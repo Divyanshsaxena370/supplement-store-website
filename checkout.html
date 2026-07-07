@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | NutriHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css"
+</head>
+<body>
+
+<div class="checkout-container">
+
+    <h2>Checkout</h2>
+    <div class="order-summary">
+
+    <h3>Order Summary</h3>
+
+    <div id="checkoutItems"></div>
+    <hr>
+    <div class="total">
+        <span>Total</span>
+        <span>Rs.<span id="checkoutTotal">0</span></span>
+    </div>
+
+</div>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Address</label>
+        <textarea placeholder="Enter your address" rows="4" required></textarea>
+
+        <label>Payment Method</label>
+
+        <div class="payment">
+            <label>
+                <input type="radio" name="payment" checked>
+                Cash on Delivery
+            </label>
+
+            <label>
+                <input type="radio" name="payment">
+                UPI / Card
+            </label>
+        </div>
+
+        <button type="submit" class="place-order-btn" id="placeOrderBtn">
+            Place Order
+        </button>
+
+    </form>
+
+</div>
+<script src="checkout.js"></script>
+
+</body>
+</html>
