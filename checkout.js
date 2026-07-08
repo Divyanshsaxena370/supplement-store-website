@@ -3,20 +3,61 @@ let checkoutCart = JSON.parse(localStorage.getItem("cart")) || [];
 let checkoutItems = document.getElementById("checkoutItems");
 let checkoutTotal = document.getElementById("checkoutTotal");
 
-let total = 0;
 
-checkoutCart.forEach(item => {
+const buyNowItem = JSON.parse(localStorage.getItem("buyNowItem"));
 
-    total += Number(item.price) * (item.quantity || 1);
+if (buyNowItem) {
 
-    checkoutItems.innerHTML += `
-    <div class="summary-item">
-        <span>${item.name} x ${item.quantity || 1}</span>
-        <span>₹${item.price}</span>
-    </div>
+    checkoutItems.innerHTML = `
+        <div class="summary-item">
+            <span>${buyNowItem.name}</span>
+            <span>${buyNowItem.price}</span>
+        </div>
     `;
 
-});
+    checkoutTotal.innerText = buyNowItem.price.replace("Rs.","")
+
+    
+
+} else {
+
+    let total = 0;
+
+    checkoutCart.forEach(item => {
+
+        total += Number(item.price) * (item.quantity || 1);
+
+        checkoutItems.innerHTML += `
+        <div class="summary-item">
+            <span>${item.name} x ${item.quantity || 1}</span>
+            <span>₹${item.price}</span>
+        </div>
+        `;
+
+    });
+
+    checkoutTotal.innerText = total;
+}
+
+// const buyNowItem = JSON.parse(localStorage.getItem("buyNowItem"));
+
+// if (buyNowItem) {
+
+// let total = 0;
+
+// checkoutCart.forEach(item => {
+
+//     total += Number(item.price) * (item.quantity || 1);
+
+//     checkoutItems.innerHTML += `
+//     <div class="summary-item">
+//         <span>${item.name} x ${item.quantity || 1}</span>
+//         <span>₹${item.price}</span>
+//     </div>
+//     `;
+
+// });
+// }
 
 checkoutTotal.innerText = total;
 // placeorder function

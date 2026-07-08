@@ -138,6 +138,20 @@ document.querySelector(".checkout-btn").addEventListener("click", function () {
     window.location.href = "checkout.html"
 });
 
+const cartbuy = document.getElementById("cartbuy");
+if (cartbuy){
+cartbuy.addEventListener("click", () => {
+const buyNowItem = {
+    name:
+document.getElementById("product-name").innerText,
+price:document.getElementById("product-price").innerText,
+image:document.getElementById("product-image").src
+};
+localStorage.setItem("buyNowItem",JSON.stringify(buyNowItem));
+    window.location.href="checkout.html";
+});
+}
+
 function updateCart() {
 
     if (!cartItems) return;
