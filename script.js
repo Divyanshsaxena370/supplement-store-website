@@ -248,3 +248,4 @@ const cartNumber =document.getElementById("cartOpen");
 if(cartNumber){
     cartNumber.innerText = cart.length;
 }
+
